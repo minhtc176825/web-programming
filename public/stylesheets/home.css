@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #50a3a2;
+
+}
+
+img { max-width: 100%;}
+
+.header {
+    height: 50px;
+    background: #10555A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.header-logo {
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    color: white
+}
+
+.wrapper {
+    padding: 0 1rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 2rem;
+}
+
+.board-card {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.board-card:hover {
+    box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+}
+
+.left-pane {
+
+}
+
+.left-pane input {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.left-pane button {
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+

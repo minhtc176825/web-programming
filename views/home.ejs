@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheets/home.css" >
+	</head>
+	<body>
+		<header class="header">
+
+			<div class="left-pane">
+				<!-- <div id="home-logo">
+					<img src="../images/home-logo.jpg">
+				</div> -->
+				<div class="search">
+					<form class="form-search" action="/" method="POST">
+						<input type="text" placeholder="Search" name="search">
+						<button type="submit">Search</button>
+					</form>	
+				</div>
+			</div>
+			
+			<div class="header-logo">3min.com</div>
+			
+			<div class="right-pane">
+				<div id="noti-logo">
+
+				</div>
+				<div id="user-logo">
+	
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper">
+			<div class="board">
+				
+				<% if (boards != null) { %>
+					<% boards.forEach(function(board, index) { %>
+						<a href="boards/<%- board.id %>" class="board-card">
+							<img src="<%-board.thumbnail%>" alt="<%-board.thumbnail%>">
+							<h2><%- board.name %> </h2>
+							<p><%- board.description %></p>
+						</a>
+					<% }) %>
+				<% } else { %>
+					No boards found. 
+				<% } %>
+
+			</div>
+		</div>
+	</body>
+</html>
